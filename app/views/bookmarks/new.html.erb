@@ -1,0 +1,12 @@
+<div class="banner text-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.namesnack.com/images/NameSnack-Cinema-Business-Names-5472x3648-20200915.jpeg?crop=2:1,smart&width=1200&dpr=2);">
+  <div class="container">
+    <h1>Add new bookmark</h1>
+  </div>
+</div>
+<div class="container">
+<br>
+<%= simple_form_for [@list, @bookmark]  do |f| %>
+  <%= f.association :movie %>
+  <%= f.input :comment %>
+  <%= f.button :submit %>
+<% end %>
