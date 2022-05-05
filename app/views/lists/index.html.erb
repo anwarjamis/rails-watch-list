@@ -1,0 +1,17 @@
+<div class="banner text-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.namesnack.com/images/NameSnack-Cinema-Business-Names-5472x3648-20200915.jpeg?crop=2:1,smart&width=1200&dpr=2);">
+  <div class="container">
+    <h1>Save any kind of movies</h1>
+    <p>Create tour own movie lists to watch.</p>
+  </div>
+</div>
+<div class="container">
+  <br>
+  <h1>My lists</h1>
+  <div class="cards">
+    <% @lists.each do |list| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      <%= list.name %>
+    </div>
+    <% end %>
+  </div>
+</div>
