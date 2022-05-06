@@ -14,7 +14,7 @@
 </nav>
   <div class="cards">
     <% @lists.each do |list| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.andreablythe.com/wp-content/uploads/2014/01/2013-Movies.jpg)">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dzldggijz/image/upload/v1651853357/development/<%=list.photo.key%>.jpg)">
       <%= link_to list.name, list_path(list), class: "text-white" %>
     </div>
     <% end %>
