@@ -6,13 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts 'Deleting all bookmarks'
-Bookmark.destro_all
+Bookmark.destroy_all
 puts 'All bookmarks deleted'
 puts 'Deleting all lists'
-List.destro_all
+List.destroy_all
 puts 'All lists deleted'
 puts 'Deleting all movies'
-Movie.destro_all
+Movie.destroy_all
 puts 'All movies deleted'
 puts 'Creating movies'
 Movie.create(title: "Wonder Woman 1984", overview: "Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s", poster_url: "https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg", rating: 6.9)
