@@ -15,3 +15,6 @@ Movie.create(title: "Titanic", overview: "101-year-old Rose DeWitt Bukater tells
 Movie.create(title: "Ocean's Eight", overview: "Debbie Ocean, a criminal mastermind, gathers a crew of female thieves to pull off the heist of the century.", poster_url: "https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg", rating: 7.0)
 Movie.create(title: "The Wall: Pink Floyd", overview: "Pink Floyd – The Wall is a 1982 British live-action/animated psychological horror musical film directed by Alan Parker, based on Pink Floyd's 1979 album of the same name.", poster_url: "https://upload.wikimedia.org/wikipedia/en/9/94/Pink_Floyd_The_Wall.jpg", rating: 9.5)
 puts 'All movies created'
+puts 'Deleting all lists'
+List.destroy_all
+puts 'All lists destroyed'
